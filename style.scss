@@ -660,7 +660,7 @@ main{
 
                 img{
                     width: 100%;
-                    max-width: 100px;
+                    max-width: 400px;
                     object-fit: contain;
                 }
             }
@@ -687,35 +687,85 @@ main{
         }
 
         .section3{
-            flex-direction: row;
-            align-items: center;
-            gap: 2.5rem;
-            padding: 3rem 2rem;
+            display: flex;
+            flex-direction: row-reverse;
+            padding: 2rem 1rem;
 
-            img{
-                width: 100%;
-                max-width: 500px;
-                padding-right: 10rem;
-                object-fit: contain;
-                order: 2;
+            .right{
+                padding-left: 3rem;
+                padding-top: 5rem;
+                padding-bottom: 5rem;
+               img{
+                   width: 100%;
+                   max-width: 100%;
+                   object-fit: contain;
+               }
             }
 
-            h1{
-                margin-top: 0;
-                flex: 1;
-                font-size: 4.5rem;
-                line-height: 4.3rem;
-                padding-left: 2.5rem;
-                font-weight: 800;
-                letter-spacing: 1rem;
+            .left{
+                padding-left: 13rem;
+                padding-top: 5rem;
+                padding-bottom: 5rem;
+
+                h2{
+                    font-size: 3rem;
+                }
 
                 p{
-                    font-size: 2rem;
-                    font-weight: 400;
-                    text-align: center;
+                    padding-right: 37rem;
+                
+                    span{
+                        font-size: 1.2rem;
+                    }
                 }
+
+                .buttons{
+                    display: flex;
+                    gap: 1rem;
+
+                button{
+                    font-size: 1rem;
+                }
+
+                h6{
+                    font-size: 1rem;
+
+                    i{
+                        font-size: 1rem;
+                    }
+                }
+              } 
             }
+        }
+
+        .comm{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row;
+            background: linear-gradient(to right, rgb(245, 245, 215), white);
+            margin-top: 0.6rem;
+
+            .community_left{
+                padding-right: 3rem;
+                padding-top: 5rem;
+                padding-bottom: 5rem;
+
+               img{
+                   width: 100%;
+                   max-width: 900px;
+                   object-fit: contain;
+               }
+            }
+
+            .community_right{
+                padding-right: 3rem;
+                padding-top: 5rem;
+                padding-bottom: 5rem;
+
+            
 
         }
     }
 }  
+}
