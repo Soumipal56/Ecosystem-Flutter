@@ -66,16 +66,7 @@ main{
                 color: grey;
                 margin-right: 0.7rem;
             }
-
-            // h5{
-            //     display: none;
-            // }
-
-            // button{
-            //     display: none;
-            // }
         }
-
     }
 
     .home{
@@ -575,6 +566,7 @@ main{
            h4{
                text-align: center;
            }
+        
         }
         .logo{
 
@@ -587,21 +579,14 @@ main{
                 gap: 2rem;
 
                 i{
-                    display: none;
-                }
-                
+                display: none;
+           }
+           #iconn{
+                display: block;
+           }
                 h4{
                     display: block;
                     color: rgb(91, 90, 90);
-
-                    // i{
-                    //     font-size: 1rem;
-                    // }
-
-                    // button{
-                    //     background-color: blue;
-                    //     color: white;
-                    // }
                 }
             }
         }
@@ -690,32 +675,37 @@ main{
             display: flex;
             flex-direction: row-reverse;
             padding: 2rem 1rem;
+            width: 100%;
 
             .right{
-                padding-left: 3rem;
-                padding-top: 5rem;
-                padding-bottom: 5rem;
+                display: flex;
+                align-items: end;
+                justify-content: center;
+                width: 50%;
                img{
-                   width: 100%;
-                   max-width: 100%;
-                   object-fit: contain;
+                   width: 65%;
+                   object-fit: cover;
                }
             }
 
             .left{
-                padding-left: 13rem;
-                padding-top: 5rem;
-                padding-bottom: 5rem;
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+                padding: 10rem;
+                justify-content: center;
+                width: 50%;
+
 
                 h2{
                     font-size: 3rem;
                 }
 
                 p{
-                    padding-right: 37rem;
+                    width: 500px;
                 
                     span{
-                        font-size: 1.2rem;
+                        font-size: 1.4rem;
                     }
                 }
 
@@ -761,10 +751,7 @@ main{
             .community_right{
                 padding-right: 3rem;
                 padding-top: 5rem;
-                padding-bottom: 5rem;
-
-            
-
+                padding-bottom: 5rem; 
         }
     }
 }  
