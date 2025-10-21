@@ -60,6 +60,13 @@ main{
         }
 
         .logo_right{
+            h4, button{
+                display: none;
+            }
+
+            #iconn{
+                display: none;
+            }
 
             i{
                 font-size: 1.2rem;
@@ -196,11 +203,16 @@ main{
     .section3{
         padding: 2rem 1rem;
 
-        img{
+        .right{
+            img{
+            padding-top: 5rem;
             width: 100%;
             max-width: 1600px;
-            object-fit: contain;
+            object-fit: cover;
+          }
         }
+
+        .left{
 
         h3{
             font-family: 'hey';
@@ -241,16 +253,23 @@ main{
             color: black;
         }
     }
+}
 
-    .community{
+    .comm{
         margin-top: 4rem;
         padding: 2rem 1rem;
+        background: linear-gradient(to top, rgb(253, 253, 223), white);
+
+        .community_left{
 
         img{
             width: 100%;
             max-width: 1600px;
             object-fit: contain;
         }
+    }
+
+    .community_right{
 
         h3{
             font-family: 'hey';
@@ -288,14 +307,21 @@ main{
             padding: 0.5rem 2rem;
         }
     }
-    .events{
+}
+    .even{
+        margin-top: 4rem;
         padding: 2rem 1rem;
+
+        .even-right{
 
         img{
             width: 100%;
             max-width: 1600px;
             object-fit: contain;
-        }    
+        }
+    }
+
+    .even-left{
 
         h3{
             font-family: 'hey';
@@ -332,17 +358,24 @@ main{
             margin-top: 1.5rem;
             border-radius: 3rem;
             padding: 0.5rem 2rem;
-        } 
+        }
+    } 
     }
-    .packages{
+    .package{
         margin-top: 4rem;
         padding: 2rem 1rem;
+
+        .package_left{
 
         img{
             width: 100%;
             max-width: 1600px;
             object-fit: contain;
         }
+    }
+
+    .package_right{
+        
 
         h3{
             font-family: 'hey';
@@ -380,11 +413,11 @@ main{
             padding: 0.5rem 2rem;
         }
     }
+    }
     .get{
         margin-top: 4rem;
         padding: 2rem 1rem;
         position: relative;
-        transform: rotateX('45deg');
 
         img{
             width: 100%;
@@ -394,33 +427,33 @@ main{
 
         h1{
             position: absolute;
-            bottom: 17rem;
-            left: 4rem;
+            bottom: 15rem;
+            left: 3rem;
             font-family: 'hey';
-            font-size: 2.9rem;
+            font-size: 2rem;
             line-height: 1rem;
             font-weight: 900;
             margin-top: 2rem;
             letter-spacing: 0.1rem;
-            color: black;
+            color: white;
         }
 
         p{
             position: absolute;
-            bottom: 11rem;
-            left: 4rem;
+            bottom: 10rem;
+            left: 3rem;
             font-family: 'hey';
-            font-size: 1.4rem;
+            font-size: 1rem;
             line-height: 1.7rem;
             margin-top: 2.5rem;
             font-weight: 400;
-            color: black;
+            color: white;
         }
 
         .buttons{
             position: absolute;
             bottom: 7rem;
-            left: 4rem;
+            left: 3rem;
 
             button{
                 border: 1px solid rgb(11, 158, 249);
@@ -580,7 +613,19 @@ main{
 
                 i{
                 display: none;
-           }
+                }
+
+                button{
+                    color: white;
+                    background-color: blue;
+                    padding: 0.6rem 2rem;
+                    border-radius: 3rem;
+                    border: none;
+                    margin-right: 1rem;
+                    font-size: 1rem;
+                    font-weight: 300;
+                    cursor: pointer;
+                }
            #iconn{
                 display: block;
            }
@@ -696,7 +741,6 @@ main{
                 justify-content: center;
                 width: 50%;
 
-
                 h2{
                     font-size: 3rem;
                 }
@@ -710,6 +754,7 @@ main{
                 }
 
                 .buttons{
+                    width: 480px;
                     display: flex;
                     gap: 1rem;
 
@@ -718,6 +763,7 @@ main{
                 }
 
                 h6{
+                    display: flex;
                     font-size: 1rem;
 
                     i{
@@ -731,28 +777,354 @@ main{
         .comm{
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            flex-direction: row;
+            padding: 1rem 1rem;
+            margin-top: 1rem;
+            width: 100%;
             background: linear-gradient(to right, rgb(245, 245, 215), white);
-            margin-top: 0.6rem;
 
             .community_left{
-                padding-right: 3rem;
-                padding-top: 5rem;
-                padding-bottom: 5rem;
-
+                display: flex;
+                align-items: end;
+                justify-content: center;
+                font-family: 'hey';
+                width: 50%;
+                padding-left: 1rem;
                img{
-                   width: 100%;
-                   max-width: 900px;
-                   object-fit: contain;
+                   width: 65%;
+                   object-fit: cover;
                }
             }
 
             .community_right{
-                padding-right: 3rem;
-                padding-top: 5rem;
-                padding-bottom: 5rem; 
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+                padding-right: 7rem;
+                justify-content: center;
+                width: 50%;
+
+                h3{
+                    color: rgb(91, 90, 90);
+                    font-size: 1rem;
+                    font-family: 'hey';
+                }
+
+                h2{
+                    margin-top: 0.8rem;
+                    font-size: 3rem;
+                    line-height: 2rem;
+                    font-weight: 800;
+                    font-family: 'hey';
+                }
+
+                p{
+                    margin-top: 1.5rem;
+                    width: 500px;
+                    color: rgb(101, 100, 100);
+                    font-family: 'hey';
+                
+                    span{
+                        font-size: 1.4rem;
+                    }
+                }
+
+                button{
+                    margin-top: 1rem;
+                    color: white;
+                    background-color: blue;
+                    width: 10rem;
+                    border-radius: 25px;
+                    padding: 0.6rem 1rem;
+                    font-size: 1rem;
+                    font-weight: 500;
+                    display: flex;
+                }
+            }
+
+            }
+        }
+
+        .even{
+            display: flex;
+            flex-direction: row;
+            padding: 2rem 1rem;
+            width: 100%;
+
+            .even_right{
+                display: flex;
+                align-items: end;
+                justify-content: center;
+                width: 50%;
+               img{
+                   width: 65%;
+                   object-fit: cover;
+               }
+            }
+
+            .even_left{
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+                padding: 10rem;
+                justify-content: center;
+                font-family: 'hey';
+                width: 50%;
+
+                 h3{
+                    color: rgb(91, 90, 90);
+                    font-family: 'hey';
+                    font-size: 1rem;
+                }
+
+                h2{
+                    margin-top: 0.8rem;
+                    font-size: 3rem;
+                    line-height: 2rem;
+                    font-family: 'hey';
+                    font-weight: 800;
+                }
+
+                p{
+                    margin-top: 1.5rem;
+                    width: 500px;
+                    font-size: 0.3rem;
+                    color: rgb(101, 100, 100);
+                    font-family: 'hey';
+                
+                    span{
+                        font-size: 1.4rem;
+                    }
+                }
+
+                button{
+                    margin-top: 1rem;
+                    color: blue;
+                    background-color: white;
+                    border: 1px solid blue;
+                    width: 8rem;
+                    border-radius: 25px;
+                    padding: 0.4rem 1.3rem;
+                    font-size: 1rem;
+                    font-weight: 500;
+                    display: flex;
+                }
+            }
+        }
+
+        .package{
+            display: flex;
+            align-items: center;
+            padding: 1rem 1rem;
+            margin-top: 1rem;
+            width: 100%;
+            background: linear-gradient(to right, rgb(245, 245, 215), white);
+
+            .package_left{
+                display: flex;
+                align-items: end;
+                justify-content: center;
+                font-family: 'hey';
+                width: 50%;
+                padding-left: 1rem;
+               img{
+                   width: 65%;
+                   object-fit: cover;
+               }
+            }
+
+            .package_right{
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+                padding-right: 7rem;
+                justify-content: center;
+                width: 50%;
+
+                h3{
+                    color: rgb(91, 90, 90);
+                    font-size: 1rem;
+                    font-family: 'hey';
+                }
+
+                h2{
+                    margin-top: 0.8rem;
+                    font-size: 3rem;
+                    line-height: 2rem;
+                    font-weight: 800;
+                    font-family: 'hey';
+                }
+
+                p{
+                    margin-top: 1.5rem;
+                    width: 500px;
+                    color: rgb(101, 100, 100);
+                    font-family: 'hey';
+                
+                    span{
+                        font-size: 1.4rem;
+                    }
+                }
+
+                button{
+                    margin-top: 1rem;
+                    color: white;
+                    background-color: blue;
+                    width: 11rem;
+                    border-radius: 25px;
+                    padding: 0.6rem 1rem;
+                    font-size: 1rem;
+                    font-weight: 500;
+                    display: flex;
+                }
+            }
+        }
+
+        // ...existing code...
+.get {
+    margin-top: 4rem;
+    padding: 4rem 2rem;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;  // Changed to column
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 2500px;  // Increased width
+        padding-left: 1rem;
+        height: 400px;  
+        object-fit: cover;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .get_content {
+        text-align: center;
+        margin-bottom: 2rem;
+        position: absolute;
+
+        z-index: 2;
+        
+        h1, p {
+            color: white;
         }
     }
-}  
+
+} 
+
+   .footer{
+     display: flex;
+     justify-content: space-between;
+     width: 100%;
+
+     .footer_left{
+        width: 50%;
+        font-size: 11rem;
+        font-family: 'hey';
+     }
+
+     .footer_right{
+        display: flex;
+        width: 50%;
+        align-items: center;
+        justify-content: space-between;
+        font-family: 'hey';
+        gap: 0.5rem;
+
+        .about{
+            margin-bottom: 10rem;
+            h4{
+                color: black;
+                font-size: 1rem;
+                font-family: 'hey';
+            }
+
+            h5{
+                color: grey;
+                font-size: 1rem;
+                font-family: 'hey';
+            }
+        }
+
+        .learn{
+            margin-bottom: 11rem;
+            h4{
+                color: black;
+                font-size: 1rem;
+                font-family: 'hey';
+            }
+
+            h5{
+                color: grey;
+                font-size: 1rem;
+                font-family: 'hey';
+            }
+        }
+
+        .multi{
+            margin-bottom: 9rem;
+            padding-right: 2rem;
+            h4{
+                color: black;
+                font-size: 1rem;
+                font-family: 'hey';
+            }
+            h5{
+                color: grey;
+                font-size: 1rem;
+                font-family: 'hey';
+            }
+        }
+     }
+
+     .ground{
+        background-color: rgb(245, 244, 244);
+        position: relative;
+        
+        .icons{
+            display: flex;
+            margin-top: 4rem;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 90%;
+            right: 72rem;
+            margin-top: 3rem;
+
+            i{
+                font-size: 1.5rem;
+                margin-right: 1rem;
+            }
+            
+        }
+    }
+   }
+
+        .foot_para{
+            position: relative;
+            background-color: rgb(243, 242, 242);
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+
+            p{
+                color: rgb(101, 100, 100);
+                font-size: 1rem;
+                font-family: 'hey';
+            }
+
+            .down{
+                margin-top: 1rem;
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                color: rgb(101, 100, 100);
+                font-size: 1rem;
+                font-family: 'hey';
+            }
+        }
+        
 }

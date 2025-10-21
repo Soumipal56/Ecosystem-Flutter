@@ -47,6 +47,12 @@ main .logo .logo_left img {
   width: 8rem;
   margin-left: 0.3rem;
 }
+main .logo .logo_right h4, main .logo .logo_right button {
+  display: none;
+}
+main .logo .logo_right #iconn {
+  display: none;
+}
 main .logo .logo_right i {
   font-size: 1.2rem;
   color: grey;
@@ -161,23 +167,24 @@ main .section2 .packages p img {
 main .section3 {
   padding: 2rem 1rem;
 }
-main .section3 img {
+main .section3 .right img {
+  padding-top: 5rem;
   width: 100%;
   max-width: 1600px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-main .section3 h3 {
+main .section3 .left h3 {
   font-family: "hey";
   color: rgb(103, 102, 102);
 }
-main .section3 h1 {
+main .section3 .left h1 {
   font-family: "hey";
   font-size: 2.5rem;
   line-height: 2rem;
   margin-top: 2rem;
 }
-main .section3 p {
+main .section3 .left p {
   font-family: "hey";
   font-size: 1.2rem;
   line-height: 1.7rem;
@@ -185,7 +192,7 @@ main .section3 p {
   font-weight: 400;
   color: rgb(106, 106, 106);
 }
-main .section3 button {
+main .section3 .left button {
   border: 1px solid rgb(11, 158, 249);
   color: rgb(7, 157, 250);
   background-color: white;
@@ -193,7 +200,7 @@ main .section3 button {
   border-radius: 3rem;
   padding: 0.5rem 2rem;
 }
-main .section3 h6 {
+main .section3 .left h6 {
   margin-top: 2rem;
   font-family: "hey";
   font-size: 1.2rem;
@@ -201,22 +208,23 @@ main .section3 h6 {
   font-weight: 400;
   color: black;
 }
-main .community {
+main .comm {
   margin-top: 4rem;
   padding: 2rem 1rem;
+  background: linear-gradient(to top, rgb(253, 253, 223), white);
 }
-main .community img {
+main .comm .community_left img {
   width: 100%;
   max-width: 1600px;
   -o-object-fit: contain;
      object-fit: contain;
 }
-main .community h3 {
+main .comm .community_right h3 {
   font-family: "hey";
   margin-top: 2rem;
   color: rgb(103, 102, 102);
 }
-main .community h1 {
+main .comm .community_right h1 {
   font-family: "hey";
   font-size: 2.5rem;
   line-height: 1rem;
@@ -224,7 +232,7 @@ main .community h1 {
   margin-top: 2rem;
   letter-spacing: 0.1rem;
 }
-main .community p {
+main .comm .community_right p {
   font-family: "hey";
   font-size: 1.2rem;
   line-height: 1.7rem;
@@ -232,31 +240,32 @@ main .community p {
   font-weight: 400;
   color: rgb(106, 106, 106);
 }
-main .community p span {
+main .comm .community_right p span {
   display: block;
 }
-main .community button {
+main .comm .community_right button {
   color: white;
   background-color: blue;
   margin-top: 1.5rem;
   border-radius: 3rem;
   padding: 0.5rem 2rem;
 }
-main .events {
+main .even {
+  margin-top: 4rem;
   padding: 2rem 1rem;
 }
-main .events img {
+main .even .even-right img {
   width: 100%;
   max-width: 1600px;
   -o-object-fit: contain;
      object-fit: contain;
 }
-main .events h3 {
+main .even .even-left h3 {
   font-family: "hey";
   margin-top: 2rem;
   color: rgb(103, 102, 102);
 }
-main .events h1 {
+main .even .even-left h1 {
   font-family: "hey";
   font-size: 2.5rem;
   line-height: 1rem;
@@ -264,7 +273,7 @@ main .events h1 {
   margin-top: 2rem;
   letter-spacing: 0.1rem;
 }
-main .events p {
+main .even .even-left p {
   font-family: "hey";
   font-size: 1.2rem;
   line-height: 1.7rem;
@@ -272,10 +281,10 @@ main .events p {
   font-weight: 400;
   color: rgb(106, 106, 106);
 }
-main .events p span {
+main .even .even-left p span {
   display: block;
 }
-main .events button {
+main .even .even-left button {
   border: 1px solid rgb(11, 158, 249);
   color: rgb(7, 157, 250);
   background-color: white;
@@ -283,22 +292,22 @@ main .events button {
   border-radius: 3rem;
   padding: 0.5rem 2rem;
 }
-main .packages {
+main .package {
   margin-top: 4rem;
   padding: 2rem 1rem;
 }
-main .packages img {
+main .package .package_left img {
   width: 100%;
   max-width: 1600px;
   -o-object-fit: contain;
      object-fit: contain;
 }
-main .packages h3 {
+main .package .package_right h3 {
   font-family: "hey";
   margin-top: 2rem;
   color: rgb(103, 102, 102);
 }
-main .packages h1 {
+main .package .package_right h1 {
   font-family: "hey";
   font-size: 2.5rem;
   line-height: 1rem;
@@ -306,7 +315,7 @@ main .packages h1 {
   margin-top: 2rem;
   letter-spacing: 0.1rem;
 }
-main .packages p {
+main .package .package_right p {
   font-family: "hey";
   font-size: 1.2rem;
   line-height: 1.7rem;
@@ -314,10 +323,10 @@ main .packages p {
   font-weight: 400;
   color: rgb(106, 106, 106);
 }
-main .packages p span {
+main .package .package_right p span {
   display: block;
 }
-main .packages button {
+main .package .package_right button {
   color: white;
   background-color: blue;
   margin-top: 1.5rem;
@@ -328,7 +337,6 @@ main .get {
   margin-top: 4rem;
   padding: 2rem 1rem;
   position: relative;
-  transform: rotateX("45deg");
 }
 main .get img {
   width: 100%;
@@ -338,31 +346,31 @@ main .get img {
 }
 main .get h1 {
   position: absolute;
-  bottom: 17rem;
-  left: 4rem;
+  bottom: 15rem;
+  left: 3rem;
   font-family: "hey";
-  font-size: 2.9rem;
+  font-size: 2rem;
   line-height: 1rem;
   font-weight: 900;
   margin-top: 2rem;
   letter-spacing: 0.1rem;
-  color: black;
+  color: white;
 }
 main .get p {
   position: absolute;
-  bottom: 11rem;
-  left: 4rem;
+  bottom: 10rem;
+  left: 3rem;
   font-family: "hey";
-  font-size: 1.4rem;
+  font-size: 1rem;
   line-height: 1.7rem;
   margin-top: 2.5rem;
   font-weight: 400;
-  color: black;
+  color: white;
 }
 main .get .buttons {
   position: absolute;
   bottom: 7rem;
-  left: 4rem;
+  left: 3rem;
 }
 main .get .buttons button {
   border: 1px solid rgb(11, 158, 249);
@@ -500,6 +508,17 @@ main .footer .foot_para .down h5 {
   main .logo .logo_right i {
     display: none;
   }
+  main .logo .logo_right button {
+    color: white;
+    background-color: blue;
+    padding: 0.6rem 2rem;
+    border-radius: 3rem;
+    border: none;
+    margin-right: 1rem;
+    font-size: 1rem;
+    font-weight: 300;
+    cursor: pointer;
+  }
   main .logo .logo_right #iconn {
     display: block;
   }
@@ -615,6 +634,7 @@ main .footer .foot_para .down h5 {
     font-size: 1.4rem;
   }
   main .section3 .left .buttons {
+    width: 480px;
     display: flex;
     gap: 1rem;
   }
@@ -622,6 +642,7 @@ main .footer .foot_para .down h5 {
     font-size: 1rem;
   }
   main .section3 .left .buttons h6 {
+    display: flex;
     font-size: 1rem;
   }
   main .section3 .left .buttons h6 i {
@@ -630,25 +651,310 @@ main .footer .foot_para .down h5 {
   main .comm {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
+    padding: 1rem 1rem;
+    margin-top: 1rem;
+    width: 100%;
     background: linear-gradient(to right, rgb(245, 245, 215), white);
-    margin-top: 0.6rem;
   }
   main .comm .community_left {
-    padding-right: 3rem;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    font-family: "hey";
+    width: 50%;
+    padding-left: 1rem;
   }
   main .comm .community_left img {
-    width: 100%;
-    max-width: 900px;
-    -o-object-fit: contain;
-       object-fit: contain;
+    width: 65%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   main .comm .community_right {
-    padding-right: 3rem;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-right: 7rem;
+    justify-content: center;
+    width: 50%;
+  }
+  main .comm .community_right h3 {
+    color: rgb(91, 90, 90);
+    font-size: 1rem;
+    font-family: "hey";
+  }
+  main .comm .community_right h2 {
+    margin-top: 0.8rem;
+    font-size: 3rem;
+    line-height: 2rem;
+    font-weight: 800;
+    font-family: "hey";
+  }
+  main .comm .community_right p {
+    margin-top: 1.5rem;
+    width: 500px;
+    color: rgb(101, 100, 100);
+    font-family: "hey";
+  }
+  main .comm .community_right p span {
+    font-size: 1.4rem;
+  }
+  main .comm .community_right button {
+    margin-top: 1rem;
+    color: white;
+    background-color: blue;
+    width: 10rem;
+    border-radius: 25px;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+  }
+  .even {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 1rem;
+    width: 100%;
+  }
+  .even .even_right {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    width: 50%;
+  }
+  .even .even_right img {
+    width: 65%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .even .even_left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 10rem;
+    justify-content: center;
+    font-family: "hey";
+    width: 50%;
+  }
+  .even .even_left h3 {
+    color: rgb(91, 90, 90);
+    font-family: "hey";
+    font-size: 1rem;
+  }
+  .even .even_left h2 {
+    margin-top: 0.8rem;
+    font-size: 3rem;
+    line-height: 2rem;
+    font-family: "hey";
+    font-weight: 800;
+  }
+  .even .even_left p {
+    margin-top: 1.5rem;
+    width: 500px;
+    font-size: 0.3rem;
+    color: rgb(101, 100, 100);
+    font-family: "hey";
+  }
+  .even .even_left p span {
+    font-size: 1.4rem;
+  }
+  .even .even_left button {
+    margin-top: 1rem;
+    color: blue;
+    background-color: white;
+    border: 1px solid blue;
+    width: 8rem;
+    border-radius: 25px;
+    padding: 0.4rem 1.3rem;
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+  }
+  .package {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1rem;
+    margin-top: 1rem;
+    width: 100%;
+    background: linear-gradient(to right, rgb(245, 245, 215), white);
+  }
+  .package .package_left {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    font-family: "hey";
+    width: 50%;
+    padding-left: 1rem;
+  }
+  .package .package_left img {
+    width: 65%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .package .package_right {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-right: 7rem;
+    justify-content: center;
+    width: 50%;
+  }
+  .package .package_right h3 {
+    color: rgb(91, 90, 90);
+    font-size: 1rem;
+    font-family: "hey";
+  }
+  .package .package_right h2 {
+    margin-top: 0.8rem;
+    font-size: 3rem;
+    line-height: 2rem;
+    font-weight: 800;
+    font-family: "hey";
+  }
+  .package .package_right p {
+    margin-top: 1.5rem;
+    width: 500px;
+    color: rgb(101, 100, 100);
+    font-family: "hey";
+  }
+  .package .package_right p span {
+    font-size: 1.4rem;
+  }
+  .package .package_right button {
+    margin-top: 1rem;
+    color: white;
+    background-color: blue;
+    width: 11rem;
+    border-radius: 25px;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+  }
+  .get {
+    margin-top: 4rem;
+    padding: 4rem 2rem;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .get img {
+    width: 2500px;
+    padding-left: 1rem;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin: 0 auto;
+    display: block;
+  }
+  .get .get_content {
+    text-align: center;
+    margin-bottom: 2rem;
+    position: absolute;
+    z-index: 2;
+  }
+  .get .get_content h1, .get .get_content p {
+    color: white;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .footer .footer_left {
+    width: 50%;
+    font-size: 11rem;
+    font-family: "hey";
+  }
+  .footer .footer_right {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "hey";
+    gap: 0.5rem;
+  }
+  .footer .footer_right .about {
+    margin-bottom: 10rem;
+  }
+  .footer .footer_right .about h4 {
+    color: black;
+    font-size: 1rem;
+    font-family: "hey";
+  }
+  .footer .footer_right .about h5 {
+    color: grey;
+    font-size: 1rem;
+    font-family: "hey";
+  }
+  .footer .footer_right .learn {
+    margin-bottom: 11rem;
+  }
+  .footer .footer_right .learn h4 {
+    color: black;
+    font-size: 1rem;
+    font-family: "hey";
+  }
+  .footer .footer_right .learn h5 {
+    color: grey;
+    font-size: 1rem;
+    font-family: "hey";
+  }
+  .footer .footer_right .multi {
+    margin-bottom: 9rem;
+    padding-right: 2rem;
+  }
+  .footer .footer_right .multi h4 {
+    color: black;
+    font-size: 1rem;
+    font-family: "hey";
+  }
+  .footer .footer_right .multi h5 {
+    color: grey;
+    font-size: 1rem;
+    font-family: "hey";
+  }
+  .footer .ground {
+    background-color: rgb(245, 244, 244);
+    position: relative;
+  }
+  .footer .ground .icons {
+    display: flex;
+    margin-top: 4rem;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 90%;
+    right: 72rem;
+    margin-top: 3rem;
+  }
+  .footer .ground .icons i {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+  }
+  .foot_para {
+    position: relative;
+    background-color: rgb(243, 242, 242);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  .foot_para p {
+    color: rgb(101, 100, 100);
+    font-size: 1rem;
+    font-family: "hey";
+  }
+  .foot_para .down {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: rgb(101, 100, 100);
+    font-size: 1rem;
+    font-family: "hey";
   }
 }/*# sourceMappingURL=style.css.map */
