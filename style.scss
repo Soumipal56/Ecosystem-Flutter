@@ -310,6 +310,7 @@ main{
     }
 
     .even{
+        padding: 1rem 1rem;
         flex-direction: column-reverse;
         .even_right{
         img{
@@ -326,10 +327,11 @@ main{
             color: rgb(103, 102, 102);
         }
 
-        h2{
+        h1{
             font-family: 'hey';
             font-size: 2.5rem;
-            line-height: 2.0rem;
+            line-height: 2rem;
+            padding-top: 2rem;
             padding-top: 0.5rem;
         }
 
@@ -376,9 +378,9 @@ main{
         h1{
             font-family: 'hey';
             font-size: 2.5rem;
-            line-height: 1rem;
+            line-height: 2rem;
             font-weight: 800;
-            margin-top: 2rem;
+            padding-top: 2rem;
             letter-spacing: 0.1rem;
         }
 
@@ -521,6 +523,39 @@ main{
                     font-size: 1rem;
                     font-weight: 300;
                 }
+            }
+        }
+    }
+
+    .down{
+        margin-bottom: 1rem;
+        color: rgb(106, 106, 106);
+        background-color: rgb(245, 244, 244);
+
+        .down1{
+            padding-top: 1rem;
+            font-size: 1rem;
+            font-weight: 300;
+            padding-left: 0.5rem;
+
+            p{
+                font-size: 1rem;
+                font-weight: 300;
+            }
+        }
+        .down2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            gap: 1rem;
+            font-size: 1rem;
+            font-weight: 300;
+
+            h6{
+                font-size: 1rem;
+                font-weight: 300;
             }
         }
     }
@@ -749,10 +784,10 @@ main{
                     font-size: 1rem;
                 }
 
-                h2{
+                h1{
                     margin-top: 0.8rem;
                     font-size: 3rem;
-                    line-height: 2rem;
+                    line-height: 2.7rem;
                     font-weight: 800;
                     font-family: 'hey';
                 }
@@ -801,10 +836,10 @@ main{
                     font-size: 1rem;
                 }
 
-                h2{
+                h1{
                     margin-top: 0.8rem;
                     font-size: 3rem;
-                    line-height: 2rem;
+                    line-height: 2.7rem;
                     font-family: 'hey';
                     font-weight: 800;
                 }
@@ -875,10 +910,10 @@ main{
                     font-size: 1rem;
                 }
 
-                h2{
+                h1{
                     margin-top: 0.8rem;
                     font-size: 3rem;
-                    line-height: 2rem;
+                    line-height: 2.7rem;
                     font-weight: 800;
                     font-family: 'hey';
                 }
@@ -981,6 +1016,10 @@ main{
             
         }
     }
+    
+     .down{
+        .down1{
+           text-align: center;
         }
-        
-}}
+     }   
+}}}
